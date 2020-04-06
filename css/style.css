@@ -1,0 +1,290 @@
+/*  
+*  Colors:
+*  green light: #36beca
+*  violet: #6556e7
+*  rose: ea0a8c
+*
+*  
+*  Fonts: 
+*  font-family: 'Poppins', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0; }
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 65px 0 0 0; 
+  font-size: 16px; }
+.clear {
+    clear: both; }
+
+/**********  HEADER **********/
+header {
+  background: #fff;
+  height: 85px;
+  position: fixed;
+  top: 0;
+  -ms-transition:     all 0.3s ease-out;
+  -moz-transition:    all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition:      all 0.3s ease-out;
+  transition:         all 0.3s ease-out;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  z-index: 1000; }
+.nav-up {
+  top: -85px; }
+/********** HEADER - TOP CONTACTS BAR **********/
+#top-contacts-bar {
+  height: 65px;
+  display: none;
+  border-bottom: 1px solid #efefef; }
+.top-contacts-bar-item {
+  width: 250px;
+  height: auto;
+  float: right; }
+  #language {
+  width: 150px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }  
+#language .lang-item{
+  margin: 15px 20px 0 0;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fefefe;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(54,190,202,.4);
+
+}
+.top-contacts-bar-item .icon-block {
+  background: #00bbbf;
+  box-shadow: 5px 5px 5px rgba(54,190,202,.4);
+  margin-top:17px;
+  margin-right: 15px;
+  width: 27px;
+  height: 27px;
+  padding: 8px 5px 2px 5px;
+  float: left; 
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  }    
+.top-contacts-bar-item .contact-info {
+   float: left; }
+.top-contacts-bar-item .contact_info p {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400; 
+  margin-top: 15px;}
+.top-contacts-bar-item .contact_info span {
+  font-weight: 700; }
+.top-contacts-bar-item a {
+  text-decoration: none;
+  color:#ea0a8c; } 
+/********** HEADER - LOGO ************/
+#logo {
+  width: 200px;
+  height: 80px;
+  float: left;
+  margin-left: 20px;
+  text-align: center; }
+#logo a img {
+  width: 200px;
+  height: auto;
+  margin-top: 10px; }
+/********** HEADER - MAIN NAVIGATION ************/
+#main_header nav {
+  background-color: white;
+  margin-top: 16px;
+  width: 100%;
+  clear: both; }
+#main_header ul {
+  padding: 0; }
+#main_header nav li {
+  height: 60px;
+  text-align: center;
+  list-style: none; }
+#main_header nav li a {
+  line-height: 60px; 
+  text-decoration: none;
+  color: #00bbbf;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px; }
+#main_header nav li:hover a{
+    color: #ea0a8c; }
+#main_header #menu_collapsed {
+  margin: 33px 20px 10px 20px;
+  width: 30px;
+  height: 24px;
+  float: right;
+  display: block; }
+#main_header .menu-line {
+  width: 100%;
+  height: 2px;
+  background-color: #00bbbf;
+  margin-bottom: 6px; }
+#main_header .active { display: none; }
+
+/********** Content Wrapper *************/
+.wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/******** Hero Image *********/
+
+#hero {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.left-hero {
+  width: 100%;
+  padding: 20px;
+}
+.left-hero h1 {  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: left;
+  width: 90%;
+  margin: 40px auto;
+  line-height: 36px;
+  z-index: 2;
+  
+}
+.left-hero h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  width: 90%;
+  margin: 20px auto;
+  
+}
+.right-hero {
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/assorted-sliced-fruits.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover ;
+}
+.motto-color-rose {
+  background: #e65dd1;
+  color: white;
+}
+.motto-color-green {
+  background: #36beca;
+  color: white;
+}
+.main-services-list-item {
+  color: #777;
+  font-size: 18px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.main-services-list-item i {
+  color:  #e65dd1;
+  padding-right: 7px;
+  padding-left: 25px;
+  
+}
+
+ 
+@media screen and (min-width: 861px) {
+  body {
+  padding-top: 130px; }
+  /**********  HEADER **********/
+  header {
+      height: 150px; }
+  .nav-up {
+      top: -150px; }
+  #top-contacts-bar {
+      display: block;}
+  /********** HEADER - LOGO ************/
+  #logo {
+    width: 200px;
+    height: 110px;
+    margin-left: 40px; }
+  #logo a img {
+    width: 200px; }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /********** HEADER - MAIN NAVIGATION ************/
+  #main_header nav {
+    width: 450px;
+    float: right;
+    clear: none;}
+  #main_header nav li {
+    display: inline-block;
+    margin-left: 14px; }
+  #main_header nav li:hover{
+      background-color: transparent; }
+  #main_header #menu_collapsed {
+    display: none; }
+  #main_header .active { display: block; }
+  #main_header nav .invisible {
+    display: none;
+  }
+  /*********** Hero Image *****************/
+  #hero {
+    display:flex;
+    flex-direction: row;
+    max-width: 1350px;
+    max-height: 920px;
+    flex-wrap: wrap;
+
+  }
+  .left-hero {
+    width: 48%;
+    height: 700px;
+  }
+  .right-hero {
+    width: 48%;
+    height: 700px;
+    background-image: url('../images/assorted-sliced-fruits.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover ;
+  }
+  .left-hero h1 {
+  
+  
+    font-size: 40px;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    width: 600px;
+    line-height: 60px;
+    position: relative;
+    padding: 0 15px;
+    z-index: 2;
+    
+  }
+  .left-hero h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+}
