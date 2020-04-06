@@ -65,11 +65,10 @@
             <ul class='active'>
                 
                 <li><a href="./" >Home</a></li>
-                <li><a href="#about_us" >About</a></li>
-                <li><a href="#catalog" >Products</a></li>
-                <li><a href="#gallery-section-header" >Gallery</a></li>
-                <li><a href="#contacts" >Contacts</a></li>
-                <li class="invisible"><a href="./ru/index.html">RU</a><a>PL</a><a></a></li>
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Products</a></li>
+                <li><a href="#" >Contacts</a></li>
+                <li class="invisible" id='mobile-lang'><a class='lang-item' href="./ru/index.html">RU</a><a class='lang-item'>PL</a><a class='lang-item'>EN</a></li>
             </ul>
         </nav>
     </header>
@@ -97,11 +96,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
-<script type="text/javascript" src="./js/lightbox.js"></script>
+
 <script>
         window.sr = ScrollReveal();
-        sr.reveal(document.querySelectorAll('.right-hero'), { duration: 1500, origin: 'right',distance: '40px' });
-        sr.reveal(document.querySelectorAll('.left-hero'), { duration: 1500, origin: 'left',distance: '40px' });
+        sr.reveal(document.querySelectorAll('.right-hero'), { duration: 1000, origin: 'bottom',distance: '40px' });
+        /*sr.reveal(document.querySelectorAll('.left-hero'), { duration: 1000, origin: 'bottom',distance: '40px' });*/
         
 </script>
 </body>

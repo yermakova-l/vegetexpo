@@ -52,18 +52,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  
  }  
-#language .lang-item{
+.lang-item{
   margin: 15px 20px 0 0;
   width: 40px;
   border-radius: 50%;
   border: 1px solid #fefefe;
   width: 40px;
   height: 40px;
-  display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffb600;
   box-shadow: 5px 5px 5px rgba(54,190,202,.4);
 
 }
@@ -120,7 +121,7 @@ header {
   text-decoration: none;
   color: #00bbbf;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px; }
@@ -138,6 +139,12 @@ header {
   background-color: #00bbbf;
   margin-bottom: 6px; }
 #main_header .active { display: none; }
+#mobile-lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
 
 /********** Content Wrapper *************/
 .wrapper {
@@ -160,7 +167,7 @@ header {
 .left-hero h1 {  
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 36px;
   text-align: left;
   width: 90%;
   margin: 30px auto;
@@ -170,7 +177,7 @@ header {
 }
 .left-hero h3 {
   /*font-family: 'Montserrat', sans-serif;*/
-  font-size: 18px;
+  font-size: 22px;
   /*font-weight: 300;*/
   width: 90%;
   margin: 20px auto;
@@ -193,14 +200,14 @@ header {
   color: white;
 }
 .main-services-list-item {
-  color: #777;
+  color: #555;
   font-size: 18px;
   padding: 0 15px;
   margin-bottom: 15px;
   list-style-type: none;
 }
 .main-services-list-item i {
-  color:  #e65dd1;
+  color:  #00bbbf;
   padding-right: 7px;
   padding-left: 25px;
   
