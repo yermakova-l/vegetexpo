@@ -15,8 +15,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#6654a3">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" 
     rel="stylesheet">
@@ -29,7 +31,7 @@
     <header id="main_header" class="nav-down">
         <div id="top-contacts-bar">
             <div class="top-contacts-bar-item" id="language">
-                    <a class='lang-item' href="./ru/index.html">RU</a><a class='lang-item'>PL</a>
+                    <a class='lang-item' href="./en/index.html">EN</a><a href="./ru/index.html" class='lang-item'>RU</a>
             </div>
             <div class=top-contacts-bar-item>
                 <div class="icon-block"><svg style="width:20px;height:20px" viewBox="0 0 24 24">
@@ -52,7 +54,8 @@
          
         <div id="logo">
             <a href="./" title="Link to the main page" >
-                <img src="./images/logo/logo-8_i.png" alt="Logo LLC VegetExpo">
+                <!--<img src="./images/logo/logo-8_i.png" alt="Logo LLC VegetExpo">-->
+                <img src="./images/logo/logo_120x469.png" alt="">
                 
             </a>
         </div>
@@ -64,10 +67,10 @@
         <nav>
             <ul class='active'>
                 
-                <li><a href="./" >Home</a></li>
-                <li><a href="#" >About</a></li>
-                <li><a href="#" >Products</a></li>
-                <li><a href="#" >Contacts</a></li>
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="#catalog" >Katalog</a></li>
+                <li><a href="#photogallery" >Galeria</a></li>
+                <li><a href="#contacts" >Kontakty</a></li>
                 <li class="invisible" id='mobile-lang'><a class='lang-item' href="./ru/index.html">RU</a><a class='lang-item'>PL</a><a class='lang-item'>EN</a></li>
             </ul>
         </nav>
@@ -77,7 +80,7 @@
             <div class='left-hero'>
                 <h1><span class='motto-color-green'>Import i eksport</span>
                 świeżych i mrożonych
-                <span class='motto-color-yellow'>owoców, jagód i&nbsp;warzyw</span>
+                <span class='motto-color-yellow'>owoców, jagód i&nbsp;grzybów</span>
                 w Europie</h1>
                 <h3>Lorem ipsum dolor sit amet consectetur:  </h3>
                 <ul>
@@ -91,12 +94,23 @@
             </div>
             <div class='right-hero'></div>       
         </div><!-- hero image -->
-        <div id="catalog">
-            <div class="catalog-section-header">
+        <div id="catalog"></div>
+        <div>
+            <div class="section-header">
                 <h2><span class='motto-color-yellow'>Katalog produktów</span></h2>
             </div>
-            <div class="catalog-products-gallery">
-                 <div class="product">
+            <div>
+                <ul id="portfolio-filter" class="clearfix">
+                    <li class="activeFilter"><a href="#" data-filter="*">Wszystke</a></li>
+                    <li><a href="#" data-filter=".fresh">Świeże</a></li>
+                    <li><a href="#" data-filter=".frozen">Мrożone</a></li>
+                    <li><a href="#" data-filter=".dried">Suszone</a></li>
+                    
+    
+                </ul><!-- #portfolio-filter end -->
+            </div> 
+            <div id='portfolio' class="catalog-products-gallery">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/blueberry_380x380.jpg" alt="Bilberries" />
                      </div>
@@ -105,7 +119,7 @@
                     </div>
                  </div>
                 
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/blackberry_400x400.jpg" alt="Blackberries" />
                      </div>
@@ -113,7 +127,7 @@
                         <h3>Jezyna</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/cranberry_400.jpg" alt="Cranberries" />
                      </div>
@@ -121,7 +135,7 @@
                         <h3>Zurawina</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/raspberry_400.jpg" alt="Raspberries" />
                      </div>
@@ -129,7 +143,7 @@
                         <h3>Malina</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/blackcurrant_400.jpg" alt="Black Currant">
                      </div>
@@ -137,7 +151,7 @@
                         <h3>Porzeczka Сzarna</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/redcurrant_400.jpg" alt="Red Currant" />
                      </div>
@@ -145,7 +159,7 @@
                         <h3>Porzeczka Czerwona</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/lingonberry_400.jpg" alt="Lingonberries" />
                      </div>
@@ -153,7 +167,7 @@
                         <h3>Borówka brusznica</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/aronia_400.jpg" alt="Aronia" />
                      </div>
@@ -161,7 +175,7 @@
                         <h3>Aronia</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/rowan_400.jpg" alt="Rowan" />
                      </div>
@@ -169,7 +183,7 @@
                         <h3>Jarzębina</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/strawberries_400.jpg" alt="Strawberry" />
                      </div>
@@ -177,7 +191,7 @@
                         <h3>Truskawka</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/cherry_400.jpg" alt="Сherry" />
                      </div>
@@ -185,7 +199,7 @@
                         <h3>Wiśnia</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/blueberry_400.jpg" alt="Blueberries" />
                      </div>
@@ -193,7 +207,7 @@
                         <h3>Jagody</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen">
                      <div class="product-image">
                          <img src="./images/catalog/seabuckthorns_400.jpg" alt="Sea Buckthorns" />
                      </div>
@@ -201,15 +215,8 @@
                         <h3>Rokitnik</h3>
                     </div>
                  </div>
-                 <div class="product">
-                     <div class="product-image">
-                         <img src="./images/catalog/dogrose_400.jpg" alt="Dog Rose" />
-                     </div>
-                     <div class="product-header">
-                        <h3>Dzika róża</h3>
-                    </div>
-                 </div>
-                 <div class="product">
+                 
+                 <div class="product frozen fresh dried">
                      <div class="product-image">
                          <img src="./images/catalog/ceps_400.jpg" alt="Ceps" />
                      </div>
@@ -217,7 +224,7 @@
                         <h3>Ceps</h3>
                     </div>
                  </div>
-                 <div class="product">
+                 <div class="product frozen fresh dried">
                      <div class="product-image">
                          <img src="./images/catalog/chanterelle_400.jpg" alt="Chanterelle" />
                      </div>
@@ -225,12 +232,166 @@
                         <h3>Pieprznik</h3>
                     </div>
                  </div>
+                 <div class="product frozen fresh dried">
+                    <div class="product-image">
+                        <img src="./images/catalog/podgrzybek_400.jpg" alt="Podgrzybek" />
+                    </div>
+                    <div class="product-header">
+                       <h3>Podgrzybek</h3>
+                   </div>
+                </div>
             </div>
          </div><!-- PRODUCTS CATALOG  -->
+         <div class="quality-package">
+            <div class="quality-package__item">
+                <h3>Opakowanie</h3>
+               <p>Produkty mrożone są pakowane w worki papierowe po 25 kg</p>
+               <br>
+               <p>Świeże i suszone grzyby są pakowane w drewniane skrzynie po 10 kg</p>
+           </div>
+           <div class="quality-package__item">
+            <h3>Jakość</h3>
+           <p>Dostarczamy produkty klasy 1 i 2 z ekologicznych obszarów w Europie, Afryce i Azji</p>
+           <br>
+           <p>Świeże i suszone grzyby są pakowane w drewniane skrzynie po 10 kg</p>
+       </div>
+         </div>
+         
+        
+        
+        
     </div><!--wrapper-->
+    <div id="photogallery">
+        
+            <div class="section-header">
+                <h2><span class='text-background-violet'>Foto galeria</span></h2>
+            </div>
+            <ul id="gallery" class="gallery">
+                <li><a href="./images/gallery/large/11_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/11_400x533.jpg" alt="Sea Buckthorns in 25 kg paper bag" /></a></li>
+                <li><a href="./images/gallery/large/12_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/12_400x533.jpg" alt="Dog Rose" /></a></li>
+                <li><a href="./images/gallery/large/13_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/13_400x533.jpg" alt="Dog Rose in plastic boxes" /></a></li>
+                <li><a href="./images/gallery/large/14_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/14_400x533.jpg" alt="Frozen Cranberries" /></a></li>
+                <li><a href="./images/gallery/large/15_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/15_400x533.jpg" alt="Rowan in paper bag" /></a></li>
+                <li><a href="./images/gallery/large/16_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/16_400x533.jpg" alt="Rowan" /></a></li>
+                <li><a href="./images/gallery/large/17_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/17_400x533.jpg" alt="Bilberries in plastic box" /></a></li>
+                <li><a href="./images/gallery/large/18_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/18_400x533.jpg" alt="Strawberries packaging" /></a></li>
+                <li><a href="./images/gallery/large/19_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/19_400x533.jpg" alt="Lingonberries" /></a></li>
+                <li><a href="./images/gallery/large/20_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/20_400x533.jpg" alt="Lingonberries in plastoc boxes" /></a></li>
+                <li><a href="./images/gallery/large/21_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/21_400x533.jpg" alt="Frozen cherry in paper bag" /></a></li>
+                <li><a href="./images/gallery/large/22_600x800.jpg" data-lightbox="WildBerry"><img src="./images/gallery/thumbnails/22_400x533.jpg" alt="Raspberries in plastic box" /></a></li>
 
+
+        </ul>
+
+        
+    </div>
+    
+    
+    <footer id='contacts'>
+        <div class='footer-title'>
+            <h2>DANE KONTAKTOWE</h2>
+        </div>
+        <div class='contacts-map-block'>
+            <div class="contacts">
+                <div class="contacts-item">
+                    <div class="footer-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <h3>Dane adresowe:</h3>
+                    <p>ul. Grzybowska 87<br>
+                    0084 Warszawa<br>
+                    VEGETEXPO Sp. z o.o.
+                    </p>
+                    <div class="footer-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <h3>Dział informacji</h3>
+                    <p>Natalia Wlasowa</p>
+                    <p>+48 607 095 146</p>
+                    <p>info@vegetexpo.pl</p>
+                    <p></p>
+                </div>
+                <div class="contacts-item">
+                    <div class="footer-icon">
+                        <i class='fa fa-phone'></i>
+                    </div>
+                    <h3>Dział sprzedaz:</h3>
+                    <p>Eugeniusz Wlasow</p>
+                    <p>+48 724 341 146</p>
+                    <p>evgeni.vlasov@vegetexpo.pl</p>
+                    <br>
+                    <p>Lukas Fieldmann</p>
+                    <p>+48 603 597 204</p>
+                    <p>lh.feldmann@vegetexpo.pl</p>
+                    <br>
+                    <p>Natalia Wlasowa</p>
+                    <p>+48 607 095 146</p>
+                    <p>info@vegetexpo.pl</p>
+                    <br>
+                    <p>Anastasia Wlasowa</p>
+                    <p>+48 607 257 146</p>
+                    <p>anastasia.vlasova@vegetexpo.pl</p>
+                </div>
+                <div class="contacts-item">
+                    <div class="footer-icon">
+                        <i class='fa fa-phone'></i>
+                    </div>
+                    <h3>Dział zaopatrzenia</h3>
+                    <p>Eugeniusz Wlasow</p>
+                    <p>+48 724 341 146</p>
+                    <p>evgeni.vlasov@vegetexpo.pl</p>
+
+                    <div class="footer-icon">
+                        <i class="fa fa-wifi" aria-hidden="true"></i>
+                    </div>
+                    <h3>Internet Komunikacja</h3>
+
+                    <div class='internet-communication'>
+                        <div class='internet-communication__item'>
+                            <svg  class='social-icon'   viewBox="0 0 650 650"><defs><style>.cls-1{fill:#ffffff;}.cls-2{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:16.86px;}</style></defs><title>Artboard 6</title><path class="cls-1" d="M560.65,65C544.09,49.72,477.17,1.14,328.11.48c0,0-175.78-10.6-261.47,68C18.94,116.19,2.16,186,.39,272.55S-3.67,521.3,152.68,565.28l.15,0-.1,67.11s-1,27.17,16.89,32.71c21.64,6.72,34.34-13.93,55-36.19,11.34-12.22,27-30.17,38.8-43.89,106.93,9,189.17-11.57,198.51-14.61,21.59-7,143.76-22.66,163.63-184.84C646.07,218.4,615.64,112.66,560.65,65Zm18.12,308.58C562,509,462.91,517.51,444.64,523.37c-7.77,2.5-80,20.47-170.83,14.54,0,0-67.68,81.65-88.82,102.88-3.3,3.32-7.18,4.66-9.77,4-3.64-.89-4.64-5.2-4.6-11.5.06-9,.58-111.52.58-111.52s-.08,0,0,0C38.94,485.05,46.65,347,48.15,274.71S63.23,143.2,103.57,103.37c72.48-65.65,221.79-55.84,221.79-55.84,126.09.55,186.51,38.52,200.52,51.24C572.4,138.6,596.1,233.91,578.77,373.54Z"/><path class="cls-2" d="M389.47,268.77q-2.46-49.59-50.38-52.09"/><path class="cls-2" d="M432.72,283.27q1-46.2-27.37-77.2c-19-20.74-45.3-32.16-79.05-34.63"/><path class="cls-2" d="M477,300.59q-.61-80.17-47.91-126.28t-117.65-46.6"/><path class="cls-1" d="M340.76,381.68s11.85,1,18.23-6.86l12.44-15.65c6-7.76,20.48-12.71,34.66-4.81A366.67,366.67,0,0,1,437,374.1c9.41,6.92,28.68,23,28.74,23,9.18,7.75,11.3,19.13,5.05,31.13,0,.07-.05.19-.05.25a129.81,129.81,0,0,1-25.89,31.88c-.12.06-.12.12-.23.18q-13.38,11.18-26.29,12.71a17.39,17.39,0,0,1-3.84.24,35,35,0,0,1-11.18-1.72l-.28-.41c-13.26-3.74-35.4-13.1-72.27-33.44a430.39,430.39,0,0,1-60.72-40.11,318.31,318.31,0,0,1-27.31-24.22l-.92-.92-.92-.92h0l-.92-.92c-.31-.3-.61-.61-.92-.92a318.31,318.31,0,0,1-24.22-27.31,430.83,430.83,0,0,1-40.11-60.71c-20.34-36.88-29.7-59-33.44-72.28l-.41-.28a35,35,0,0,1-1.71-11.18,16.87,16.87,0,0,1,.23-3.84Q141,181.42,152.12,168c.06-.11.12-.11.18-.23a129.53,129.53,0,0,1,31.88-25.88c.06,0,.18-.06.25-.06,12-6.25,23.38-4.13,31.12,5,.06.06,16.11,19.33,23,28.74a366.67,366.67,0,0,1,19.74,30.94c7.9,14.17,2.95,28.68-4.81,34.66l-15.65,12.44c-7.9,6.38-6.86,18.23-6.86,18.23S254.15,359.57,340.76,381.68Z"/></svg>
+                            <p>Viber</p>
+                        </div>
+                        <div class='internet-communication__item'>
+                            <svg  class='social-icon' viewBox="0 0 512 512">
+                            <path style="fill:#fff;" d="M378.853,294.202c-0.997-0.479-38.324-18.859-44.956-21.246c-2.708-0.972-5.609-1.922-8.694-1.922
+                            c-5.04,0-9.274,2.512-12.572,7.446c-3.729,5.542-15.016,18.736-18.503,22.678c-0.456,0.52-1.077,1.142-1.45,1.142
+                            c-0.334,0-6.111-2.379-7.86-3.138c-40.041-17.393-70.433-59.219-74.601-66.272c-0.595-1.014-0.62-1.474-0.625-1.474
+                            c0.146-0.537,1.493-1.887,2.188-2.583c2.033-2.011,4.236-4.663,6.367-7.228c1.009-1.215,2.02-2.432,3.012-3.579
+                            c3.092-3.597,4.468-6.39,6.064-9.625l0.836-1.681c3.897-7.742,0.569-14.274-0.507-16.384c-0.883-1.765-16.643-39.803-18.319-43.799
+                            c-4.03-9.643-9.354-14.133-16.753-14.133c-0.687,0,0,0-2.879,0.121c-3.506,0.148-22.598,2.661-31.039,7.983
+                            c-8.952,5.644-24.096,23.633-24.096,55.271c0,28.474,18.07,55.359,25.828,65.584c0.193,0.258,0.547,0.781,1.061,1.533
+                            c29.711,43.39,66.75,75.547,104.297,90.546c36.148,14.439,53.265,16.108,62.996,16.108c0.002,0,0.002,0,0.002,0
+                            c4.089,0,7.362-0.321,10.25-0.605l1.832-0.175c12.487-1.107,39.929-15.327,46.171-32.673c4.917-13.663,6.214-28.591,2.942-34.008
+                            C387.604,298.403,383.742,296.549,378.853,294.202z"></path>
+                            <path style="fill:#fff;" d="M260.545,0C121.879,0,9.066,111.965,9.066,249.588c0,44.512,11.912,88.084,34.479,126.218
+                            L0.352,503.216c-0.805,2.375-0.206,5.002,1.551,6.791C3.172,511.302,4.892,512,6.649,512c0.673,0,1.351-0.101,2.013-0.313
+                            l132.854-42.217c36.355,19.424,77.445,29.678,119.03,29.678C399.199,499.15,512,387.197,512,249.588
+                            C512,111.965,399.199,0,260.545,0z M260.545,447.159c-39.13,0-77.029-11.299-109.608-32.677c-1.095-0.72-2.367-1.089-3.647-1.089
+                            c-0.677,0-1.355,0.103-2.015,0.313l-66.552,21.155l21.484-63.383c0.695-2.051,0.347-4.314-0.933-6.063
+                            c-24.809-33.898-37.923-73.949-37.923-115.827c0-108.955,89.357-197.597,199.191-197.597c109.821,0,199.168,88.642,199.168,197.597
+                            C459.713,358.53,370.367,447.159,260.545,447.159z"></path>
+        
+                            </svg>
+                            <p>Whatsapp</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.602494371556!2d20.97574601594816!3d52.23243936525229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc9d326f1aa1%3A0xd1adccbe1eb70d36!2sConcept%20Tower%2C%20Grzybowska%2087%2C%20Warszawa%2C%20Poland!5e0!3m2!1sen!2sua!4v1587121698399!5m2!1sen!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        
+        <div class="copyright">
+            VEGETEXPO Sp. z o.o. 2020 &copy;
+        </div>
+    </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/lightbox.js"></script>
 
 <script>
         window.sr = ScrollReveal();
