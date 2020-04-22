@@ -675,7 +675,7 @@ footer .contacts-map-block {
     background-color: white;
   }
 
-  a[href^="tel"] {
+  footer a[href^="tel"] {
     color: inherit; 
     text-decoration: none; 
   }
@@ -810,7 +810,7 @@ footer .contacts-map-block {
     text-align: left;
     margin-top: 70px;
     margin-bottom: 50px;
-    width: 600px;
+    
     line-height: 60px;
     position: relative;
     padding: 0 15px;
