@@ -927,6 +927,8 @@ footer .contacts-map-block {
   .product-header h3 {
     font-size: 16px;
   }
-
+  #photogallery #gallery {
+    justify-content: space-around;
+  }
 
 }
